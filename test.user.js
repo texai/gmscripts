@@ -164,13 +164,16 @@ $(function(){
         $('#issue_descr_fields').slideUp(2000);
     });
     
-    var data = eval('(' + Base64.decode(getUrlVars().q) + ')');
+    console.log(getUrlVars().q);
+    console.log(getUrlVars().q.replace("@","="));
     
-    console.log(data);
-
-    for(var prop in data) {
-        console.log(prop + ' -> ' + data[prop]);
-    }
+//    var data = eval('(' + Base64.decode() + ')');
+//    
+//    console.log(data);
+//
+//    for(var prop in data) {
+//        console.log(prop + ' -> ' + data[prop]);
+//    }
 
     
     
