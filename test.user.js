@@ -74,13 +74,13 @@ function base64_decode (data) {
 
 $(function(){
     $('#q').click(function(){
-        $('#issue_descr_fields').slideUp(2000);;
+        $('#issue_descr_fields').slideUp(2000);
     });
-    
+    var q = getUrlVars().q;
     console.log('1');
-    console.log(getUrlVars().q);
+    console.log(q);
     console.log('2');
-    console.log(base64_decode(getUrlVars().q));
+    console.log(base64_decode(q));
     console.log('3');
     console.log(eval(base64_decode(getUrlVars().q)));
     
