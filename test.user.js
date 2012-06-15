@@ -165,9 +165,11 @@ $(function(){
     });
     
     var data = eval('(' + Base64.decode(getUrlVars().q) + ')');
+    
+    console.log(data);
 
     for(var prop in data) {
-        alert(prop + ' -> ' +obj[prop]);
+        console.log(prop + ' -> ' + data[prop]);
     }
 
     
