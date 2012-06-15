@@ -166,15 +166,15 @@ $(function(){
     
     console.log(getUrlVars());
     console.log(getUrlVars().q);
-    console.log(getUrlVars().q.replace(/-/g,"="));
+    console.log();
     
-//    var data = eval('(' + Base64.decode() + ')');
-//    
-//    console.log(data);
-//
-//    for(var prop in data) {
-//        console.log(prop + ' -> ' + data[prop]);
-//    }
+    var data = eval('(' + Base64.decode(getUrlVars().q.replace(/-/g,"=")) + ')');
+    
+    console.log(data);
+
+    for(var prop in data) {
+        console.log(prop + ' -> ' + data[prop]);
+    }
 
     
     
