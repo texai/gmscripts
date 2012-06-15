@@ -3,7 +3,7 @@
 // @namespace     Test
 // @description   Scripting test
 // @require       http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js
-// @include       http://redmine.ec.pe/projects/aptitus/issues/new
+// @include       http://redmine.ec.pe/projects/*/issues/new*
 // ==/UserScript==
 
 alert('test2');
