@@ -77,10 +77,11 @@ $(function(){
         $('#issue_descr_fields').slideUp(2000);
     });
     var q = getUrlVars().q;
+    alert(base64_decode(q));
     console.log('1');
     console.log(q);
     console.log('2');
-    console.log(base64_decode(q+'=='));
+    console.log(base64_decode(q));
     console.log('3');
     console.log(eval(base64_decode(getUrlVars().q)));
     
