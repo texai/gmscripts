@@ -164,7 +164,13 @@ $(function(){
         $('#issue_descr_fields').slideUp(2000);
     });
     
-    console.log(eval('(' + Base64.decode(getUrlVars().q) + ')'));
+    var data = eval('(' + Base64.decode(getUrlVars().q) + ')');
+
+    for(var prop in data) {
+        alert(prop + ' -> ' +obj[prop]);
+    }
+
+    
     
 });
 
