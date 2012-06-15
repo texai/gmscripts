@@ -26,8 +26,18 @@ $(function(){
     $('#q').click(function(){
         $('#issue_descr_fields').slideUp(2000);;
     });
-    console.log('dsa');
-    console.log({wdw:'ass'});
-    console.log(getUrlVars());
+    
+    console.log('1');
+    console.log(getUrlVars().q);
+    
+    console.log('2');
+    console.log(getUrlVars()['q']);
+    
+    console.log('3');
+    console.log(getUrlVars()['q'].q);
+    
+    console.log('4');
+    console.log(getUrlVars()['q']['q']);
+    
 });
 
