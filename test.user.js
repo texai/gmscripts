@@ -6,7 +6,7 @@
 // @include       http://redmine.ec.pe/projects/aptitus/issues/new
 // ==/UserScript==
 
-alert('test1');
+alert('test2');
 
 $(function(){
     $('#q').click(function(){
