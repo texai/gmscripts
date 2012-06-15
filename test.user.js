@@ -80,7 +80,7 @@ $(function(){
     console.log('1');
     console.log(q);
     console.log('2');
-    console.log(base64_decode(q));
+    console.log(base64_decode(q+'=='));
     console.log('3');
     console.log(eval(base64_decode(getUrlVars().q)));
     
