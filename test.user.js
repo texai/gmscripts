@@ -170,7 +170,19 @@ $(function(){
     console.log(data);
 
     for(var prop in data) {
-        $('#'+prop).val(data[prop]);
+        console.log(prop);
+        console.log(data[prop]);
+        
+        if (prop=='issue_watcher_user_ids_'){
+            watchers = data[prop].split('|');
+            for(var wid in watchers) {
+                $('#watchers_form label input[value="'+watchers[wid]+'"]').click()
+            }
+        } else {
+            $('#'+prop).val(data[prop]);
+        }
+        
+        
     }
 
     
