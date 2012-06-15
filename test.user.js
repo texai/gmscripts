@@ -8,6 +8,9 @@
 
 alert('test1');
 
-$('#q').click(function(){
-    $('issue_descr_fields').slideUp(2000);;
+$(function(){
+    $('#q').click(function(){
+        $('#issue_descr_fields').slideUp(2000);;
+    });
 });
+
