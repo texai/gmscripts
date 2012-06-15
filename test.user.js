@@ -164,6 +164,7 @@ $(function(){
         $('#issue_descr_fields').slideUp(2000);
     });
     
+    console.log(getUrlVars());
     console.log(getUrlVars().q);
     console.log(getUrlVars().q.replace("@","="));
     
