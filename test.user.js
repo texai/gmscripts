@@ -166,7 +166,7 @@ $(function(){
     
     console.log(getUrlVars());
     console.log(getUrlVars().q);
-    console.log(getUrlVars().q.replace("@","="));
+    console.log(getUrlVars().q.replace(/-/g,"="));
     
 //    var data = eval('(' + Base64.decode() + ')');
 //    
